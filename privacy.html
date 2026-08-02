@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Varia</title>
+<style>
+  :root{--bg:#0E1015;--surface:#171A21;--line:#262B38;--text:#F2F4F8;--text2:#B9BFCE;--muted:#8A91A3;--accent:#7C5CFF}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text2);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       padding:40px 20px 80px}
+  main{max-width:720px;margin:0 auto}
+  .brand{font-size:26px;font-weight:700;color:var(--text);letter-spacing:-.02em;margin:0 0 4px}
+  .brand span{color:var(--accent)}
+  .date{color:var(--muted);font-size:14px;margin:0 0 28px}
+  .switch{display:flex;gap:8px;margin:0 0 40px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+  .switch a{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;
+            background:var(--surface);color:var(--text2);text-decoration:none;font-size:14px}
+  .switch a:hover{border-color:var(--accent);color:var(--text)}
+  h1{font-size:22px;color:var(--text);margin:56px 0 8px;letter-spacing:-.01em}
+  h2{font-size:17px;color:var(--text);margin:34px 0 10px}
+  p,li{color:var(--text2)}
+  ul{padding-left:22px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  strong{color:var(--text);font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:var(--surface);color:var(--text);font-weight:600}
+  hr{border:0;border-top:1px solid var(--line);margin:64px 0}
+  footer{color:var(--muted);font-size:13.5px;margin-top:56px;padding-top:24px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+
+  <p class="brand">varia<span>.</span></p>
+  <p class="date">Privacy Policy · Effective 1 August 2026</p>
+
+  <div class="switch">
+    <a href="#en">English</a>
+    <a href="#tr">Türkçe</a>
+    <a href="terms.html">Terms of Use</a>
+  </div>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <h1 id="en">Privacy Policy</h1>
+
+  <p>Varia is an independent iOS app that helps you discover YouTube channels. It is
+  built and operated by a single developer. This policy explains exactly what the app
+  collects, why, and what you can do about it.</p>
+
+  <p>The short version: Varia collects the minimum needed to keep your account and your
+  list working, plus anonymous-by-default usage statistics so I can tell which parts of
+  the app people actually use. <strong>Nothing is sold, and nothing is shared with
+  advertisers or data brokers.</strong></p>
+
+  <h2>1. Using Varia without an account</h2>
+  <p>You can browse Varia without signing in. In guest mode, the channels you follow
+  (up to five) and your preferences are stored <strong>only on your device</strong>.
+  They are not sent to any server and I cannot see them.</p>
+  <p>Usage statistics and crash reports described in section 4 are still collected in
+  guest mode, but they are not connected to any identity.</p>
+
+  <h2>2. What is collected when you sign in</h2>
+  <table>
+    <tr><th>Data</th><th>Where it comes from</th><th>Why</th></tr>
+    <tr><td>Email address</td><td>Sign in with Apple or Google</td><td>To identify your account</td></tr>
+    <tr><td>Display name</td><td>Sign in with Apple or Google</td><td>Shown on your profile screen</td></tr>
+    <tr><td>Account identifier</td><td>Created by Varia</td><td>Links your list to your account</td></tr>
+    <tr><td>Followed channels</td><td>You, in the app</td><td>So your list follows you across devices</td></tr>
+    <tr><td>Preferences</td><td>You, in the app</td><td>Topics, content languages, channel size, sponsor-free ordering, notification choices</td></tr>
+    <tr><td>YouTube subscriptions</td><td>Your Google account, with your permission</td><td>To improve your recommendations — see section 3</td></tr>
+  </table>
+  <p>If you use Sign in with Apple and choose <em>Hide My Email</em>, Varia only ever
+  receives Apple's private relay address. I never see your real address.</p>
+
+  <h2>3. YouTube subscriptions import</h2>
+  <p>If you sign in with Google, Varia asks for read-only permission to your YouTube
+  subscriptions. If you grant it, the app reads the <strong>channel identifiers</strong>
+  you are subscribed to — nothing else. No watch history, no playlists, no comments, no
+  videos.</p>
+  <p>These identifiers are used as an interest signal to improve which channels are
+  recommended to you and to users with similar taste. <strong>They are never added to
+  your follow list</strong> and are never shown to other users.</p>
+  <p>You can decline this permission and still use every other part of Varia. You can
+  withdraw it at any time from your
+  <a href="https://myaccount.google.com/permissions">Google account permissions page</a>,
+  and you can remove the imported data entirely by deleting your Varia account (section 7).</p>
+
+  <h2>4. Usage statistics and crash reports</h2>
+  <p>Varia uses <strong>Google Firebase Analytics</strong> and <strong>Firebase
+  Crashlytics</strong>. Analytics records which screens are opened and which actions are
+  taken — a channel opened, a channel followed, the dice rolled, a search performed,
+  onboarding completed. Crashlytics records technical details when the app crashes:
+  device model, iOS version, and the error itself.</p>
+  <p>Two things worth knowing:</p>
+  <ul>
+    <li><strong>Search text is never sent.</strong> When you search, the app records only
+    how many characters you typed and how many results came back — never what you typed.</li>
+    <li><strong>There is no advertising identifier.</strong> Varia does not read the IDFA,
+    does not include any advertising framework, and will never show you an App Tracking
+    Transparency prompt, because there is nothing to track.</li>
+  </ul>
+  <p>When you are signed in, your account identifier is attached to these reports so a
+  crash can be traced to the account that hit it. In guest mode no identifier is attached.</p>
+
+  <h2>5. Who processes your data</h2>
+  <table>
+    <tr><th>Service</th><th>Role</th><th>Their policy</th></tr>
+    <tr><td>Supabase</td><td>Database and authentication</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+    <tr><td>Render</td><td>API server hosting</td><td><a href="https://render.com/privacy">render.com/privacy</a></td></tr>
+    <tr><td>Google Firebase</td><td>Usage statistics and crash reports</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Google / YouTube</td><td>Channel data and sign-in</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  </table>
+  <p>These are processors acting on Varia's behalf. Your data is not sold, rented or
+  shared with anyone else.</p>
+
+  <h2>6. Varia and YouTube</h2>
+  <p>Varia uses <strong>YouTube API Services</strong> to gather public information about
+  channels — names, descriptions, subscriber counts, video counts, thumbnails and recent
+  video titles.</p>
+  <p>By using Varia you are also agreeing to the
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling
+  of your information is governed by the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can review
+  and revoke Varia's access to your Google data at any time from your
+  <a href="https://myaccount.google.com/permissions">Google account permissions page</a>.</p>
+  <p>Varia is an independent application. It is not affiliated with, endorsed by or
+  sponsored by YouTube or Google LLC. YouTube is a trademark of Google LLC.</p>
+
+  <h2>7. Keeping and deleting your data</h2>
+  <p>Your account data is kept for as long as your account exists. You can delete your
+  account from inside the app at any time: <strong>Profile → Delete account</strong>.</p>
+  <p>Deleting your account permanently removes your profile, your follow list, your
+  preferences and your imported YouTube subscription identifiers. This cannot be undone.
+  Usage statistics already collected are retained by Firebase according to Google's own
+  retention schedule and are no longer connected to you once the account is gone.</p>
+
+  <h2>8. Your rights</h2>
+  <p>Depending on where you live you may have the right to access, correct, export or
+  erase the data held about you, and to object to how it is processed. Deleting your
+  account inside the app satisfies erasure immediately. For anything else, write to the
+  address below and I will respond within 30 days.</p>
+
+  <h2>9. Children</h2>
+  <p>Varia is not directed at children under 13, and I do not knowingly collect data from
+  them. If you believe a child has provided information, write to me and I will delete it.</p>
+
+  <h2>10. Changes</h2>
+  <p>If this policy changes materially, the effective date at the top will change and the
+  updated version will be published here before the change takes effect.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions, requests or complaints: <a href="mailto:ibrahimdn250@gmail.com">ibrahimdn250@gmail.com</a></p>
+
+  <hr>
+
+  <!-- ==================== TÜRKÇE ==================== -->
+  <h1 id="tr">Gizlilik Politikası</h1>
+
+  <p>Varia, YouTube kanallarını keşfetmene yarayan bağımsız bir iOS uygulaması. Tek bir
+  geliştirici tarafından yapılıyor ve işletiliyor. Bu metin, uygulamanın tam olarak neyi
+  topladığını, niçin topladığını ve senin bu konuda ne yapabileceğini anlatıyor.</p>
+
+  <p>Kısa hali: Varia, hesabının ve listenin çalışması için gereken en az veriyi, bir de
+  uygulamanın hangi kısımlarının gerçekten kullanıldığını görebilmem için kullanım
+  istatistiklerini topluyor. <strong>Hiçbir veri satılmıyor, reklamcılarla veya veri
+  simsarlarıyla paylaşılmıyor.</strong></p>
+
+  <h2>1. Hesap açmadan kullanım</h2>
+  <p>Varia'yı giriş yapmadan gezebilirsin. Misafir modunda takip ettiğin kanallar (en
+  fazla beş tane) ve tercihlerin <strong>yalnızca cihazında</strong> saklanıyor. Hiçbir
+  sunucuya gönderilmiyor, benim görmem mümkün değil.</p>
+  <p>4. bölümde anlatılan kullanım istatistikleri ve çökme raporları misafir modunda da
+  toplanıyor, ancak hiçbir kimlikle ilişkilendirilmiyor.</p>
+
+  <h2>2. Giriş yaptığında toplananlar</h2>
+  <table>
+    <tr><th>Veri</th><th>Nereden geliyor</th><th>Niçin</th></tr>
+    <tr><td>E-posta adresi</td><td>Apple veya Google ile giriş</td><td>Hesabını tanımlamak için</td></tr>
+    <tr><td>Görünen ad</td><td>Apple veya Google ile giriş</td><td>Profil ekranında gösteriliyor</td></tr>
+    <tr><td>Hesap kimliği</td><td>Varia oluşturuyor</td><td>Listeni hesabına bağlamak için</td></tr>
+    <tr><td>Takip edilen kanallar</td><td>Uygulama içinde sen</td><td>Listen cihazlar arasında seninle gelsin diye</td></tr>
+    <tr><td>Tercihler</td><td>Uygulama içinde sen</td><td>Konular, içerik dilleri, kanal boyutu, sponsorsuz sıralama, bildirim seçimleri</td></tr>
+    <tr><td>YouTube abonelikleri</td><td>İzninle Google hesabından</td><td>Önerilerini iyileştirmek için — bkz. 3. bölüm</td></tr>
+  </table>
+  <p>Apple ile giriş yaparken <em>E-postamı Gizle</em> seçeneğini kullanırsan, Varia'ya
+  yalnızca Apple'ın gizli yönlendirme adresi ulaşıyor. Gerçek adresini hiçbir zaman
+  görmüyorum.</p>
+
+  <h2>3. YouTube aboneliklerinin içe aktarılması</h2>
+  <p>Google ile giriş yaparsan Varia, YouTube aboneliklerini <em>yalnızca okumak</em>
+  için izin istiyor. İzin verirsen uygulama, abone olduğun <strong>kanalların
+  kimliklerini</strong> okuyor — başka hiçbir şeyi değil. İzleme geçmişi, oynatma
+  listesi, yorum, video: hiçbiri okunmuyor.</p>
+  <p>Bu kimlikler, sana ve benzer zevkteki kullanıcılara hangi kanalların önerileceğini
+  iyileştirmek için bir ilgi sinyali olarak kullanılıyor. <strong>Takip listene asla
+  eklenmiyor</strong> ve başka kullanıcılara hiçbir zaman gösterilmiyor.</p>
+  <p>Bu izni vermeyi reddedip Varia'nın geri kalanını sorunsuz kullanabilirsin. İzni
+  dilediğin an
+  <a href="https://myaccount.google.com/permissions">Google hesap izinleri sayfasından</a>
+  geri alabilir, içe aktarılan veriyi de Varia hesabını silerek tamamen kaldırabilirsin
+  (7. bölüm).</p>
+
+  <h2>4. Kullanım istatistikleri ve çökme raporları</h2>
+  <p>Varia, <strong>Google Firebase Analytics</strong> ve <strong>Firebase
+  Crashlytics</strong> kullanıyor. Analytics hangi ekranların açıldığını ve hangi
+  eylemlerin yapıldığını kaydediyor: kanal açma, kanal takip etme, zar atma, arama
+  yapma, kuruluma başlama ve bitirme gibi. Crashlytics ise uygulama çöktüğünde teknik
+  ayrıntıları kaydediyor: cihaz modeli, iOS sürümü ve hatanın kendisi.</p>
+  <p>Bilmen gereken iki şey:</p>
+  <ul>
+    <li><strong>Arama metni hiçbir zaman gönderilmiyor.</strong> Arama yaptığında
+    uygulama yalnızca kaç karakter yazdığını ve kaç sonuç döndüğünü kaydediyor — ne
+    yazdığını değil.</li>
+    <li><strong>Reklam kimliği yok.</strong> Varia IDFA'yı okumuyor, herhangi bir reklam
+    kütüphanesi içermiyor ve sana asla App Tracking Transparency izin penceresi
+    göstermeyecek — çünkü takip edilecek bir şey yok.</li>
+  </ul>
+  <p>Giriş yaptığında hesap kimliğin bu raporlara ekleniyor; böylece bir çökme, onu
+  yaşayan hesaba kadar izlenebiliyor. Misafir modunda hiçbir kimlik eklenmiyor.</p>
+
+  <h2>5. Verini kimler işliyor</h2>
+  <table>
+    <tr><th>Hizmet</th><th>Rolü</th><th>Politikası</th></tr>
+    <tr><td>Supabase</td><td>Veritabanı ve kimlik doğrulama</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+    <tr><td>Render</td><td>API sunucusu barındırma</td><td><a href="https://render.com/privacy">render.com/privacy</a></td></tr>
+    <tr><td>Google Firebase</td><td>Kullanım istatistikleri ve çökme raporları</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
+    <tr><td>Google / YouTube</td><td>Kanal verisi ve giriş</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+  </table>
+  <p>Bunlar Varia adına hareket eden hizmet sağlayıcılar. Verin satılmıyor, kiralanmıyor
+  ve başka kimseyle paylaşılmıyor.</p>
+
+  <h2>6. Varia ve YouTube</h2>
+  <p>Varia, kanallar hakkındaki herkese açık bilgileri toplamak için <strong>YouTube API
+  Hizmetleri</strong>'ni kullanıyor: ad, açıklama, abone sayısı, video sayısı, profil
+  görseli ve son video başlıkları.</p>
+  <p>Varia'yı kullanarak aynı zamanda
+  <a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a>'nı da kabul etmiş
+  oluyorsun. Google'ın bilgilerini nasıl işlediği
+  <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ile
+  düzenleniyor. Varia'nın Google verilerine erişimini dilediğin an
+  <a href="https://myaccount.google.com/permissions">Google hesap izinleri sayfasından</a>
+  görebilir ve iptal edebilirsin.</p>
+  <p>Varia bağımsız bir uygulamadır. YouTube veya Google LLC ile bağlantılı değildir,
+  onlar tarafından desteklenmemekte ve sponsor edilmemektedir. YouTube, Google LLC'nin
+  ticari markasıdır.</p>
+
+  <h2>7. Verinin saklanması ve silinmesi</h2>
+  <p>Hesap verilerin, hesabın var olduğu sürece saklanıyor. Hesabını dilediğin an
+  uygulama içinden silebilirsin: <strong>Profil → Hesabı sil</strong>.</p>
+  <p>Hesabını silmek profilini, takip listeni, tercihlerini ve içe aktarılmış YouTube
+  abonelik kimliklerini kalıcı olarak kaldırıyor. Bu işlem geri alınamaz. Daha önce
+  toplanmış kullanım istatistikleri, Google'ın kendi saklama takvimine göre Firebase'de
+  kalıyor ve hesap silindikten sonra artık seninle ilişkilendirilemiyor.</p>
+
+  <h2>8. Hakların</h2>
+  <p>Yaşadığın ülkeye göre, hakkında tutulan veriye erişme, düzeltme, dışa aktarma veya
+  silme ve işlenmesine itiraz etme hakkın olabilir. Uygulama içinden hesabını silmen,
+  silme talebini anında karşılıyor. Diğer talepler için aşağıdaki adrese yaz, 30 gün
+  içinde dönüş yapıyorum.</p>
+
+  <h2>9. Çocuklar</h2>
+  <p>Varia 13 yaşın altındaki çocuklara yönelik değil ve onlardan bilerek veri
+  toplamıyorum. Bir çocuğun bilgi verdiğini düşünüyorsan bana yaz, sileyim.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Bu politikada esaslı bir değişiklik olursa, en üstteki yürürlük tarihi değişir ve
+  güncel sürüm, değişiklik yürürlüğe girmeden önce burada yayımlanır.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Soru, talep veya şikâyet: <a href="mailto:ibrahimdn250@gmail.com">ibrahimdn250@gmail.com</a></p>
+
+  <footer>
+    Varia · Bağımsız bir uygulama · <a href="terms.html">Kullanım Koşulları</a>
+  </footer>
+
+</main>
+</body>
+</html>
