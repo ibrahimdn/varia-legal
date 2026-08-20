@@ -70,6 +70,7 @@
     <tr><td>Display name</td><td>Sign in with Apple or Google</td><td>Shown on your profile screen</td></tr>
     <tr><td>Account identifier</td><td>Created by Varia</td><td>Links your list to your account</td></tr>
     <tr><td>Followed channels</td><td>You, in the app</td><td>So your list follows you across devices</td></tr>
+    <tr><td>In-app activity</td><td>You, in the app</td><td>Which channels you opened, followed, or opened on YouTube — used to make your recommendations more accurate. Kept for 90 days, then deleted.</td></tr>
     <tr><td>Preferences</td><td>You, in the app</td><td>Topics, content languages, channel size, sponsor-free ordering, notification choices</td></tr>
     <tr><td>YouTube subscriptions</td><td>Your Google account, with your permission</td><td>To improve your recommendations — see section 3</td></tr>
   </table>
@@ -95,6 +96,14 @@
   taken — a channel opened, a channel followed, the dice rolled, a search performed,
   onboarding completed. Crashlytics records technical details when the app crashes:
   device model, iOS version, and the error itself.</p>
+
+  <p>A few of those interaction events — opening a channel, following it, or opening it on
+  YouTube — are <strong>also stored on Varia's own servers</strong>, tied to your account.
+  This is what makes your recommendations personal: what you actually do in the app turns
+  out to describe your taste far better than the topics you pick during setup. These
+  records are kept for <strong>90 days</strong> and then deleted automatically, and they go
+  immediately if you delete your account. Nothing else about your activity is stored this
+  way — no search text, no browsing history.</p>
   <p>Two things worth knowing:</p>
   <ul>
     <li><strong>Search text is never sent.</strong> When you search, the app records only
@@ -184,6 +193,7 @@
     <tr><td>Hesap kimliği</td><td>Varia oluşturuyor</td><td>Listeni hesabına bağlamak için</td></tr>
     <tr><td>Takip edilen kanallar</td><td>Uygulama içinde sen</td><td>Listen cihazlar arasında seninle gelsin diye</td></tr>
     <tr><td>Tercihler</td><td>Uygulama içinde sen</td><td>Konular, içerik dilleri, kanal boyutu, sponsorsuz sıralama, bildirim seçimleri</td></tr>
+    <tr><td>Uygulama içi hareketler</td><td>Uygulama içinde sen</td><td>Hangi kanalları açtığın, takip ettiğin veya YouTube'da açtığın — önerilerini isabetli kılmak için. 90 gün saklanır, sonra silinir.</td></tr>
     <tr><td>YouTube abonelikleri</td><td>İzninle Google hesabından</td><td>Önerilerini iyileştirmek için — bkz. 3. bölüm</td></tr>
   </table>
   <p>Apple ile giriş yaparken <em>E-postamı Gizle</em> seçeneğini kullanırsan, Varia'ya
@@ -210,6 +220,13 @@
   eylemlerin yapıldığını kaydediyor: kanal açma, kanal takip etme, zar atma, arama
   yapma, kuruluma başlama ve bitirme gibi. Crashlytics ise uygulama çöktüğünde teknik
   ayrıntıları kaydediyor: cihaz modeli, iOS sürümü ve hatanın kendisi.</p>
+
+  <p>Bu etkileşimlerden birkaçı — bir kanalı açman, takip etmen veya YouTube'da açman —
+  <strong>Varia'nın kendi sunucusunda da</strong> hesabına bağlı olarak saklanıyor.
+  Önerilerini kişisel kılan şey bu: uygulamada gerçekten ne yaptığın, kurulumda seçtiğin
+  konulardan çok daha iyi anlatıyor neyden hoşlandığını. Bu kayıtlar <strong>90 gün</strong>
+  tutuluyor, sonra kendiliğinden siliniyor; hesabını silersen anında gidiyor. Hareketlerinle
+  ilgili başka hiçbir şey böyle saklanmıyor — arama metni yok, gezinme geçmişi yok.</p>
   <p>Bilmen gereken iki şey:</p>
   <ul>
     <li><strong>Arama metni hiçbir zaman gönderilmiyor.</strong> Arama yaptığında
