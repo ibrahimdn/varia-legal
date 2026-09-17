@@ -36,7 +36,7 @@
 <main>
 
   <p class="brand">varia<span>.</span></p>
-  <p class="date">Privacy Policy · Effective 1 August 2026</p>
+  <p class="date">Privacy Policy · Effective 17 September 2026</p>
 
   <div class="switch">
     <a href="#en">English</a>
@@ -88,7 +88,7 @@
   <p>You can decline this permission and still use every other part of Varia. You can
   withdraw it at any time from your
   <a href="https://myaccount.google.com/permissions">Google account permissions page</a>,
-  and you can remove the imported data entirely by deleting your Varia account (section 7).</p>
+  and you can remove the imported data entirely by deleting your Varia account (section 8).</p>
 
   <h2>4. Usage statistics and crash reports</h2>
   <p>Varia uses <strong>Google Firebase Analytics</strong> and <strong>Firebase
@@ -126,7 +126,37 @@
   <p>These are processors acting on Varia's behalf. Your data is not sold, rented or
   shared with anyone else.</p>
 
-  <h2>6. Varia and YouTube</h2>
+  <h2>6. How your data is protected</h2>
+  <p>Security procedures are in place to protect the confidentiality of your data,
+  including any data obtained through Google APIs.</p>
+  <ul>
+    <li><strong>Encrypted in transit.</strong> Every connection between the app, the Varia
+    API and the database uses HTTPS/TLS. The app makes no plain HTTP requests.</li>
+    <li><strong>Encrypted at rest.</strong> The database is hosted on Supabase, where
+    stored data and backups are encrypted at rest.</li>
+    <li><strong>Your Google token is never stored.</strong> When you import your
+    subscriptions, the access token is held in memory only for the duration of that single
+    request, used to call the YouTube Data API, and then discarded. It is never written to
+    the database, to a log or to a file.</li>
+    <li><strong>Row-level access control.</strong> Every table holding user data has
+    row-level security enabled in the database, so one account cannot read another
+    account's rows.</li>
+    <li><strong>Authenticated requests only.</strong> Endpoints that touch your data
+    require a signed session token, which the server verifies on every request.</li>
+    <li><strong>Rate limiting.</strong> Requests are rate limited to reduce the risk of
+    abuse and automated scraping.</li>
+    <li><strong>Secrets stay on the server.</strong> API keys and database credentials are
+    kept in the server environment &mdash; never in the app binary, never in the public
+    source repository.</li>
+    <li><strong>Least privilege.</strong> Varia asks YouTube for read-only access and
+    keeps only the channel identifiers it needs. It never requests write access, so it
+    cannot change anything in your YouTube account.</li>
+  </ul>
+  <p>No system can be guaranteed to be perfectly secure. If you believe you have found a
+  security problem in Varia, please write to
+  <a href="mailto:ibrahimdn250@gmail.com">ibrahimdn250@gmail.com</a>.</p>
+
+  <h2>7. Varia and YouTube</h2>
   <p>Varia uses <strong>YouTube API Services</strong> to gather public information about
   channels — names, descriptions, subscriber counts, video counts, thumbnails and recent
   video titles.</p>
@@ -139,7 +169,7 @@
   <p>Varia is an independent application. It is not affiliated with, endorsed by or
   sponsored by YouTube or Google LLC. YouTube is a trademark of Google LLC.</p>
 
-  <h2>7. Keeping and deleting your data</h2>
+  <h2>8. Keeping and deleting your data</h2>
   <p>Your account data is kept for as long as your account exists. You can delete your
   account from inside the app at any time: <strong>Profile → Delete account</strong>.</p>
   <p>Deleting your account permanently removes your profile, your follow list, your
@@ -147,21 +177,21 @@
   Usage statistics already collected are retained by Firebase according to Google's own
   retention schedule and are no longer connected to you once the account is gone.</p>
 
-  <h2>8. Your rights</h2>
+  <h2>9. Your rights</h2>
   <p>Depending on where you live you may have the right to access, correct, export or
   erase the data held about you, and to object to how it is processed. Deleting your
   account inside the app satisfies erasure immediately. For anything else, write to the
   address below and I will respond within 30 days.</p>
 
-  <h2>9. Children</h2>
+  <h2>10. Children</h2>
   <p>Varia is not directed at children under 13, and I do not knowingly collect data from
   them. If you believe a child has provided information, write to me and I will delete it.</p>
 
-  <h2>10. Changes</h2>
+  <h2>11. Changes</h2>
   <p>If this policy changes materially, the effective date at the top will change and the
   updated version will be published here before the change takes effect.</p>
 
-  <h2>11. Contact</h2>
+  <h2>12. Contact</h2>
   <p>Questions, requests or complaints: <a href="mailto:ibrahimdn250@gmail.com">ibrahimdn250@gmail.com</a></p>
 
   <hr>
@@ -212,7 +242,7 @@
   dilediğin an
   <a href="https://myaccount.google.com/permissions">Google hesap izinleri sayfasından</a>
   geri alabilir, içe aktarılan veriyi de Varia hesabını silerek tamamen kaldırabilirsin
-  (7. bölüm).</p>
+  (8. bölüm).</p>
 
   <h2>4. Kullanım istatistikleri ve çökme raporları</h2>
   <p>Varia, <strong>Google Firebase Analytics</strong> ve <strong>Firebase
@@ -250,7 +280,37 @@
   <p>Bunlar Varia adına hareket eden hizmet sağlayıcılar. Verin satılmıyor, kiralanmıyor
   ve başka kimseyle paylaşılmıyor.</p>
 
-  <h2>6. Varia ve YouTube</h2>
+  <h2>6. Verin nasıl korunuyor</h2>
+  <p>Verinin gizliliğini korumak için güvenlik önlemleri alınmış durumda; Google
+  API'lerinden gelen veri de buna dahil.</p>
+  <ul>
+    <li><strong>İletimde şifreli.</strong> Uygulama, Varia API'si ve veritabanı
+    arasındaki her bağlantı HTTPS/TLS kullanıyor. Uygulama düz HTTP isteği atmıyor.</li>
+    <li><strong>Depoda şifreli.</strong> Veritabanı Supabase üzerinde; orada saklanan
+    veri ve yedekler şifreli tutuluyor.</li>
+    <li><strong>Google tokenın hiç saklanmıyor.</strong> Aboneliklerini içe aktarırken
+    erişim tokenı yalnızca o tek isteğin süresince bellekte tutuluyor, YouTube Data
+    API'sini çağırmak için kullanılıyor ve sonra atılıyor. Veritabanına, log'a veya bir
+    dosyaya asla yazılmıyor.</li>
+    <li><strong>Satır bazında erişim denetimi.</strong> Kullanıcı verisi tutan her
+    tabloda satır düzeyinde güvenlik açık; bir hesap başka bir hesabın satırlarını
+    okuyamıyor.</li>
+    <li><strong>Yalnızca kimliği doğrulanmış istekler.</strong> Verine dokunan uçlar
+    imzalı bir oturum tokenı istiyor ve sunucu bunu her istekte doğruluyor.</li>
+    <li><strong>Hız sınırı.</strong> İstekler hız sınırına tabi; kötüye kullanım ve
+    otomatik kazıma riskini azaltıyor.</li>
+    <li><strong>Sırlar sunucuda kalıyor.</strong> API anahtarları ve veritabanı kimlik
+    bilgileri sunucunun ortam değişkenlerinde duruyor &mdash; uygulama ikilisinde de,
+    açık kaynak deposunda da yok.</li>
+    <li><strong>En az yetki.</strong> Varia YouTube'dan yalnızca okuma yetkisi istiyor ve
+    yalnızca ihtiyaç duyduğu kanal kimliklerini tutuyor. Yazma yetkisi hiç istenmiyor,
+    yani YouTube hesabında hiçbir şeyi değiştiremez.</li>
+  </ul>
+  <p>Hiçbir sistemin kusursuz güvenli olduğu garanti edilemez. Varia'da bir güvenlik
+  sorunu bulduğunu düşünüyorsan
+  <a href="mailto:ibrahimdn250@gmail.com">ibrahimdn250@gmail.com</a> adresine yaz.</p>
+
+  <h2>7. Varia ve YouTube</h2>
   <p>Varia, kanallar hakkındaki herkese açık bilgileri toplamak için <strong>YouTube API
   Hizmetleri</strong>'ni kullanıyor: ad, açıklama, abone sayısı, video sayısı, profil
   görseli ve son video başlıkları.</p>
@@ -265,7 +325,7 @@
   onlar tarafından desteklenmemekte ve sponsor edilmemektedir. YouTube, Google LLC'nin
   ticari markasıdır.</p>
 
-  <h2>7. Verinin saklanması ve silinmesi</h2>
+  <h2>8. Verinin saklanması ve silinmesi</h2>
   <p>Hesap verilerin, hesabın var olduğu sürece saklanıyor. Hesabını dilediğin an
   uygulama içinden silebilirsin: <strong>Profil → Hesabı sil</strong>.</p>
   <p>Hesabını silmek profilini, takip listeni, tercihlerini ve içe aktarılmış YouTube
@@ -273,21 +333,21 @@
   toplanmış kullanım istatistikleri, Google'ın kendi saklama takvimine göre Firebase'de
   kalıyor ve hesap silindikten sonra artık seninle ilişkilendirilemiyor.</p>
 
-  <h2>8. Hakların</h2>
+  <h2>9. Hakların</h2>
   <p>Yaşadığın ülkeye göre, hakkında tutulan veriye erişme, düzeltme, dışa aktarma veya
   silme ve işlenmesine itiraz etme hakkın olabilir. Uygulama içinden hesabını silmen,
   silme talebini anında karşılıyor. Diğer talepler için aşağıdaki adrese yaz, 30 gün
   içinde dönüş yapıyorum.</p>
 
-  <h2>9. Çocuklar</h2>
+  <h2>10. Çocuklar</h2>
   <p>Varia 13 yaşın altındaki çocuklara yönelik değil ve onlardan bilerek veri
   toplamıyorum. Bir çocuğun bilgi verdiğini düşünüyorsan bana yaz, sileyim.</p>
 
-  <h2>10. Değişiklikler</h2>
+  <h2>11. Değişiklikler</h2>
   <p>Bu politikada esaslı bir değişiklik olursa, en üstteki yürürlük tarihi değişir ve
   güncel sürüm, değişiklik yürürlüğe girmeden önce burada yayımlanır.</p>
 
-  <h2>11. İletişim</h2>
+  <h2>12. İletişim</h2>
   <p>Soru, talep veya şikâyet: <a href="mailto:ibrahimdn250@gmail.com">ibrahimdn250@gmail.com</a></p>
 
   <footer>
