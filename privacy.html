@@ -36,7 +36,7 @@
 <main>
 
   <p class="brand">varia<span>.</span></p>
-  <p class="date">Privacy Policy · Effective 21 September 2026</p>
+  <p class="date">Privacy Policy · Effective 18 October 2026</p>
 
   <div class="switch">
     <a href="#en">English</a>
@@ -54,8 +54,9 @@
   <p>The short version: Varia collects the minimum needed to keep your account and your
   list working, plus anonymous-by-default usage statistics so I can tell which parts of
   the app people actually use. <strong>Nothing is sold, and nothing is shared with
-  advertisers or data brokers.</strong> The app carries no advertising at all; the
-  varia.life website shows Google AdSense ads — see section 12.</p>
+  data brokers.</strong> The app shows no ads. If you allow it, the app tells TikTok that
+  it was installed and opened, so I can see which TikTok ads bring people to Varia — see
+  section 4. The varia.life website shows Google AdSense ads — see section 12.</p>
 
   <h2>1. Using Varia without an account</h2>
   <p>You can browse Varia without signing in. In guest mode, the channels you follow
@@ -109,9 +110,16 @@
   <ul>
     <li><strong>Search text is never sent.</strong> When you search, the app records only
     how many characters you typed and how many results came back — never what you typed.</li>
-    <li><strong>There is no advertising identifier.</strong> The app does not read the IDFA,
-    does not include any advertising framework, and will never show you an App Tracking
-    Transparency prompt, because there is nothing to track.</li>
+    <li><strong>TikTok ad measurement happens only if you allow it.</strong> Varia advertises
+    on TikTok and uses the <strong>TikTok Business SDK</strong> to measure which ads lead
+    to installs. The first time you reach the home screen, iOS asks whether Varia may
+    track you (App Tracking Transparency). <strong>If you tap "Ask App Not to Track", the
+    SDK is never started and nothing is sent to TikTok.</strong> If you allow it, the SDK
+    sends TikTok your device's advertising identifier (IDFA), its vendor identifier, IP
+    address, device model, iOS version and language, and the fact that the app was
+    installed and opened. It does <strong>not</strong> send your account, e-mail address,
+    YouTube data, searches, the channels you open or follow, or purchases. You can change
+    your choice at any time in iOS Settings → Privacy &amp; Security → Tracking.</li>
   </ul>
   <p>When you are signed in, your account identifier is attached to these reports so a
   crash can be traced to the account that hit it. In guest mode no identifier is attached.</p>
@@ -123,9 +131,11 @@
     <tr><td>Render</td><td>API server hosting</td><td><a href="https://render.com/privacy">render.com/privacy</a></td></tr>
     <tr><td>Google Firebase</td><td>Usage statistics and crash reports</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
     <tr><td>Google / YouTube</td><td>Channel data and sign-in</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+    <tr><td>TikTok</td><td>Ad install measurement, only with your permission (section 4)</td><td><a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">tiktok.com/legal/privacy-policy</a></td></tr>
   </table>
-  <p>These are processors acting on Varia's behalf. Your data is not sold, rented or
-  shared with anyone else.</p>
+  <p>Except for TikTok, these are processors acting on Varia's behalf. TikTok receives
+  data only if you allow tracking, and uses it under its own policy. Your data is not
+  sold, rented or shared with anyone else.</p>
 
   <h2>6. How your data is protected</h2>
   <p>Security procedures are in place to protect the confidentiality of your data,
@@ -193,9 +203,9 @@
   updated version will be published here before the change takes effect.</p>
 
   <h2>12. Advertising on the varia.life website</h2>
-  <p><strong>The iOS app shows no ads.</strong> It contains no advertising framework, does
-  not read the advertising identifier (IDFA), and collects nothing for advertising
-  purposes.</p>
+  <p><strong>The iOS app shows no ads.</strong> Its only advertising-related component is
+  the TikTok Business SDK, which measures Varia's own TikTok ads and runs only if you
+  allow tracking (section 4).</p>
   <p><strong>The varia.life website</strong> shows ads through Google AdSense. To serve
   them, Google and its partners may set cookies and process information sent by your
   browser, such as your IP address, browser type and the pages you view. That processing
@@ -222,9 +232,11 @@
 
   <p>Kısa hali: Varia, hesabının ve listenin çalışması için gereken en az veriyi, bir de
   uygulamanın hangi kısımlarının gerçekten kullanıldığını görebilmem için kullanım
-  istatistiklerini topluyor. <strong>Hiçbir veri satılmıyor, reklamcılarla veya veri
-  simsarlarıyla paylaşılmıyor.</strong> Uygulamada hiç reklam yok; varia.life web
-  sitesinde Google AdSense reklamları gösteriliyor — bkz. 12. bölüm.</p>
+  istatistiklerini topluyor. <strong>Hiçbir veri satılmıyor, veri simsarlarıyla
+  paylaşılmıyor.</strong> Uygulamada reklam yok. İzin verirsen uygulama, yüklendiğini ve
+  açıldığını TikTok'a bildiriyor; böylece insanları Varia'ya hangi TikTok reklamlarının
+  getirdiğini görebiliyorum — bkz. 4. bölüm. varia.life web sitesinde Google AdSense
+  reklamları gösteriliyor — bkz. 12. bölüm.</p>
 
   <h2>1. Hesap açmadan kullanım</h2>
   <p>Varia'yı giriş yapmadan gezebilirsin. Misafir modunda takip ettiğin kanallar (en
@@ -280,9 +292,17 @@
     <li><strong>Arama metni hiçbir zaman gönderilmiyor.</strong> Arama yaptığında
     uygulama yalnızca kaç karakter yazdığını ve kaç sonuç döndüğünü kaydediyor — ne
     yazdığını değil.</li>
-    <li><strong>Reklam kimliği yok.</strong> Uygulama IDFA'yı okumuyor, herhangi bir reklam
-    kütüphanesi içermiyor ve sana asla App Tracking Transparency izin penceresi
-    göstermeyecek — çünkü takip edilecek bir şey yok.</li>
+    <li><strong>TikTok reklam ölçümü yalnızca izin verirsen yapılıyor.</strong> Varia
+    TikTok'ta reklam veriyor ve hangi reklamların yüklemeye dönüştüğünü ölçmek için
+    <strong>TikTok Business SDK</strong> kullanıyor. Ana ekrana ilk geldiğinde iOS,
+    Varia'nın seni takip edip edemeyeceğini soruyor (App Tracking Transparency).
+    <strong>"Uygulamadan İzlememesini İste" dersen SDK hiç başlatılmıyor ve
+    TikTok'a hiçbir şey gönderilmiyor.</strong> İzin verirsen SDK, cihazının reklam
+    kimliğini (IDFA), satıcı kimliğini, IP adresini, cihaz modelini, iOS sürümünü ve
+    dilini, bir de uygulamanın yüklendiğini ve açıldığını TikTok'a gönderiyor. Hesabını,
+    e-posta adresini, YouTube verini, aramalarını, açtığın ya da takip ettiğin kanalları
+    ve satın alımlarını <strong>göndermiyor</strong>. Tercihini istediğin zaman iOS
+    Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsin.</li>
   </ul>
   <p>Giriş yaptığında hesap kimliğin bu raporlara ekleniyor; böylece bir çökme, onu
   yaşayan hesaba kadar izlenebiliyor. Misafir modunda hiçbir kimlik eklenmiyor.</p>
@@ -294,9 +314,11 @@
     <tr><td>Render</td><td>API sunucusu barındırma</td><td><a href="https://render.com/privacy">render.com/privacy</a></td></tr>
     <tr><td>Google Firebase</td><td>Kullanım istatistikleri ve çökme raporları</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
     <tr><td>Google / YouTube</td><td>Kanal verisi ve giriş</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+    <tr><td>TikTok</td><td>Reklam yükleme ölçümü, yalnızca iznin varsa (4. bölüm)</td><td><a href="https://www.tiktok.com/legal/page/global/privacy-policy/tr">tiktok.com/legal/privacy-policy</a></td></tr>
   </table>
-  <p>Bunlar Varia adına hareket eden hizmet sağlayıcılar. Verin satılmıyor, kiralanmıyor
-  ve başka kimseyle paylaşılmıyor.</p>
+  <p>TikTok dışındakiler Varia adına hareket eden hizmet sağlayıcılar. TikTok veriyi
+  yalnızca takibe izin verirsen alıyor ve kendi politikasına göre kullanıyor. Verin
+  satılmıyor, kiralanmıyor ve başka kimseyle paylaşılmıyor.</p>
 
   <h2>6. Verin nasıl korunuyor</h2>
   <p>Verinin gizliliğini korumak için güvenlik önlemleri alınmış durumda; Google
@@ -366,9 +388,9 @@
   güncel sürüm, değişiklik yürürlüğe girmeden önce burada yayımlanır.</p>
 
   <h2>12. varia.life web sitesindeki reklamlar</h2>
-  <p><strong>iOS uygulamasında reklam yok.</strong> Uygulama hiçbir reklam kütüphanesi
-  içermiyor, reklam kimliğini (IDFA) okumuyor ve reklam amacıyla hiçbir veri
-  toplamıyor.</p>
+  <p><strong>iOS uygulamasında reklam yok.</strong> Reklamla ilgili tek bileşeni, Varia'nın
+  kendi TikTok reklamlarını ölçen TikTok Business SDK; o da yalnızca takibe izin
+  verirsen çalışıyor (4. bölüm).</p>
   <p><strong>varia.life web sitesinde</strong> Google AdSense aracılığıyla reklam
   gösteriliyor. Google ve iş ortakları bu reklamları sunmak için çerez kullanabilir ve
   tarayıcından gelen bilgileri (IP adresi, tarayıcı türü, görüntülediğin sayfalar)
